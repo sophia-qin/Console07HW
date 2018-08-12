@@ -1,0 +1,17 @@
+{
+  "name": "Console07",
+  "AMIBs": {
+    "AMIB1": {
+	    "serialNumber": "55438303439351E00162" 
+	  },
+    "AMIB2": {
+	    "serialNumber": "55438303439351E051D0"
+	  },
+    "AMIB3": {
+	    "serialNumber": "8543931323035130C0E0"
+	  },
+    "AMIB4": {
+	    "serialNumber": "8543333323135130B130"
+	  }
+  }
+}

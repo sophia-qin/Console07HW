@@ -1,0 +1,191 @@
+class IDLE:
+  pass
+
+class MAGLIFTER:
+  def master():
+    def events():
+      Left
+      Right
+      cycleBall
+      finishedAction
+      liftPiston
+  def tablet():
+    def events():
+       finishedAction
+
+class POOLSHOT:
+  def master():
+    def values():
+      shooterPosition = uint16_t
+      goalNum = uint8_t
+      shotResult = uint8_t
+      poolScore = uint16_t
+      pointCount = uint16_t
+      sensor = bool
+      totalScore = uint16_t
+      count = uint16_t
+    def events():
+      testLEDs
+      shootBall
+      liftMechanism
+      homeShooter
+      demo
+      finishedAction
+      ballScored
+      loseGame
+      releasePiston
+  def amib2():
+    def values():
+      shooterPosition = uint16_t
+    def events():
+      shootBall
+      testLEDs
+      liftMechanism
+      homeShooter
+      demo
+  def tablet():
+    def events():
+      finishedAction
+      ballScored
+      loseGame
+    def values():
+      goalNum = uint8_t
+      shotResult = uint8_t
+      blinkLED = uint16_t
+      poolScore = uint16_t
+      pointCount = uint16_t
+      totalScore = uint16_t
+      count = uint16_t
+      
+class PACHINKO:
+  def master():
+    def events():
+      pumpAndReset
+      releaseBall
+      demo
+      goLeft
+      goRight
+      pachinkoHome
+      ballLoopHome
+      turnRedLEDOn
+      turnRedLEDOff
+      turnBlueLEDOn
+      turnBlueLEDOff
+      turnYellowLEDOn
+      turnYellowLEDOff
+      playPachinko
+      centerSetup
+      dropperSetup
+      ballPumpSetup
+      switchSetup
+      finishedAction
+      loseGame
+      winGame
+      test
+      TCTgame
+      moveOnAction
+      blueSensorOn
+    def values():
+      dropperPos = uint16_t
+      redScore = uint16_t
+      blueScore = uint16_t
+      yellowScore = uint16_t
+      redSensor = bool
+      blueSensor = bool
+      yellowSensor = bool
+      count = uint16_t
+  def amib2():
+    def events():
+      turnRedLEDOn
+      turnRedLEDOff
+      turnBlueLEDOn
+      turnBlueLEDOff
+      turnYellowLEDOn
+      turnYellowLEDOff
+      blueSensorOn
+  def amib3():
+    def values():
+      dropperPos = uint16_t
+    def events():
+      pumpAndReset
+      releaseBall
+      demo
+      goLeft
+      goRight
+      pachinkoHome
+      ballLoopHome
+      playPachinko
+      centerSetup
+      dropperSetup
+      ballPumpSetup
+      switchSetup
+      test
+      finishedAction
+  def tablet():
+    def values():
+      redScore = uint16_t
+      blueScore = uint16_t
+      yellowScore = uint16_t
+      count = uint16_t
+    def events():
+      ballScored
+      chooseWhereNext
+      finishedAction
+      loseGame
+      winGame
+      redCupScored
+      yellowCupScored
+      blueCupScored
+      TCTgame
+      moveOnAction
+      blueSensorOn
+
+class VARIABLEFRICTION:
+  def master():
+    def values():
+      laneNum1 = uint8_t
+      laneNum2 = uint8_t
+    def events():
+      compareTwoLanes
+      compareAll
+      resetRamps
+      sweepBlocks
+      resetSweepers
+      resetBlocks
+      laneThree
+  def amib3():
+    def values():
+      laneNum1 = uint8_t
+      laneNum2 = uint8_t
+    def events():
+      compareTwoLanes
+      compareAll
+      resetRamps
+  def amib4():
+    def values():
+      laneNum1 = uint8_t
+      laneNum2 = uint8_t
+    def events():
+      compareTwoLanes
+      compareAll
+      resetRamps
+      sweepBlocks
+      resetSweepers
+      resetBlocks
+      laneThree
+
+class TCT:
+  def master():
+    def events():
+      playTableclothTrick
+      releaseCup
+      pickUp
+      finishedAction
+  def amib3():
+    def events():
+      playTableclothTrick
+      pickUp
+      releaseCup
+  def tablet():
+    def events():
+      finishedAction

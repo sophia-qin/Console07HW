@@ -1,0 +1,9 @@
+How to run the ball loop:
+
+1. Upload AMIB1 on Arduino
+2. Go to the command prompt and cd C:\ArcadeOfPhysics\MechHW\MechHWConsole07
+3. Once you're there, run python debug.py 
+4. After IDLE type in state MAGLIFTER
+5. Wait 30 seconds and it should run
+
+DO NOT TURN ON CONSOLE UNTIL YOU UPLOAD CODE OR ELSE THE SLIDER IS GOING TO BREAK!
