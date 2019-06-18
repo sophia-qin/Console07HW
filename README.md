@@ -8,7 +8,6 @@ be a hardware issue. The Poolshot mechanism needs to be redesigned again as the 
 The TCT game lifts up sideways and the cup gets placed weird. Just run it on debug and you will see. 
 You should also ask to get another ball stop installed because we are currently using one sensor to control 2 games. 
 Additionally, the Friction cars need to be installed. We wrote code for it and most of it should work but needs to be worked on. 
-When that is all done, you can begin working on two player mode unless there a new vision ;). 
 
 When you upload code, upload MechHWConsole07_old because we reverted back to old code at Maker Faire and it didn't work so the "old" 
 is actually the new, working code. Feel free to rename it so you know which code to upload. 
